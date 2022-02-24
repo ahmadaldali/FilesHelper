@@ -22,8 +22,8 @@ composer require ahmadaldali/helper-files
 You can upload your file, by passing it with the stored folder name.
 
 Notes:
-1- The fill will be stored in your_folder inside the storage/app/public
-2- if it is uploaded successfully, you can the result as following, any failure happens you will get null response.
+1. The fill will be stored in your_folder inside the storage/app/public
+2. if it is uploaded successfully, you can the result as following, any failure happens you will get null response.
 ```sh
 {
     "file": bool,

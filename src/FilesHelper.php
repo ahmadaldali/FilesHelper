@@ -2,6 +2,7 @@
 
 namespace AhmadAldali\FilesHelper;
 
+use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -16,11 +17,13 @@ class FilesHelper
      * and get information about the file
      * 
      */
-    public function fileUpload($file, $folder_name)
+    public static function fileUpload($file, $folder_name)
     {
         try {
             //generate a random name
             $file_name = Str::random(10);
+            //get the name/ name of uploaded image
+            $origin_name = $file->getClientOriginalName();
             //get the extension
             $ext = strtolower($file->getClientOriginalExtension());
             //generated name + ext
@@ -29,13 +32,11 @@ class FilesHelper
             $full_path = $folder_name . '/' . $full_file_name;
             //save in app/storage/public/folder_name folder
             $file = Storage::disk('public')->put($full_path, File::get($file));
+            if(!$file) throw New Exception('Error Saving');
             //get the size file
             $size = Storage::disk('public')->size($full_path);
-            //get the name/ name of uploaded image
-            $origin_name = $file->getClientOriginalName();
             //return result
             $data = [
-                'status' => true,
                 'file' => $file,
                 'origin_name' => $origin_name,
                 'full_path' => 'storage/app/public/' . $full_path,

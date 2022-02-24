@@ -1,10 +1,10 @@
 # Files Helper 
 ## _Make dealing with Files easier_
 
-Files Helper is a package that allow you to deal with files easiler.
-It will contains some methods like:
+Files Helper is a package that allows you to deal with files easier.
+It will contain some methods like:
 - Upload a new file (image, video, txt, pdf, etc ..)  /  _COMPLETED_.
-- Upload a new file (image, video, txt, pdf, etc ..) with determine the driver storage.
+- Upload a new file (image, video, txt, pdf, etc ..) with determining the driver storage.
 - Remove a file.
 
 
@@ -29,7 +29,7 @@ $response =  FilesHelper::fileUpload($your_file,'folder_name');
 
 ## Notes
 1. The file will be stored in your_folder inside the storage/app/public
-2. if it is uploaded successfully, you can the result as following, any failure happens you will get null response.
+2. if it is uploaded successfully, you can the result as follows, any failure happens you will get a null response.
 ```sh
 {
     "file": bool,

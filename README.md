@@ -12,7 +12,7 @@ Any Suggestion
 Install the package in your application.
 
 ```sh
-cd my_project
+cd your_project
 composer require ahmadaldali/helper-files
 ```
 

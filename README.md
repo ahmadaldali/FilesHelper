@@ -8,7 +8,7 @@ It will contains some methods like:
 - Remove a file.
 
 
-_Any Suggestion_
+_Any Suggestion?_
 
 ## Installation
 Install the package in your application.
@@ -20,7 +20,7 @@ composer require ahmadaldali/helper-files
 
 ## Usage
 
-- Upload File
+- Upload File.
 You can upload your file, by passing it with the stored folder name.
 ```sh
 use AhmadAldali\FilesHelper\FilesHelper;

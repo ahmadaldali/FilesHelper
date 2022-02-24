@@ -6,7 +6,7 @@ It will contains some methods like:
 - Upload a new file (image, video, txt, pdf, etc ..) / completed.
 - Upload a new file (image, video, txt, pdf, etc ..) with determine the driver storage
 - Remove a file
-Any Suggestion 
+_Any Suggestion_
 
 ## Installation
 Install the package in your application.
@@ -20,7 +20,6 @@ composer require ahmadaldali/helper-files
 
 - Upload File
 You can upload your file, by passing it with the stored folder name.
-
 ```sh
 use AhmadAldali\FilesHelper\FilesHelper;
 $response =  FilesHelper::fileUpload($your_file,'folder_name');
@@ -28,7 +27,7 @@ $response =  FilesHelper::fileUpload($your_file,'folder_name');
 
 ## Notes
 1. The fill will be stored in your_folder inside the storage/app/public
-2. When the file is uploaded successfully, you can the result as following, any failure happens you will get null response.
+2. if it is uploaded successfully, you can the result as following, any failure happens you will get null response.
 ```sh
 {
     "file": bool,

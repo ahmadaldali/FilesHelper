@@ -20,7 +20,7 @@ composer require ahmadaldali/helper-files
 
 ## Usage
 
-- Upload File.
+- Upload File.\
   You can upload your file, by passing it with the stored folder name.
 ```sh
 use AhmadAldali\FilesHelper\FilesHelper;

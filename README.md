@@ -26,7 +26,7 @@ use AhmadAldali\FilesHelper\FilesHelper;
 $response =  FilesHelper::fileUpload($your_file,'folder_name');
 ```
 
-Notes:
+## Notes
 1. The fill will be stored in your_folder inside the storage/app/public
 2. if it is uploaded successfully, you can the result as following, any failure happens you will get null response.
 ```sh

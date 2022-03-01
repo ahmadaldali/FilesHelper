@@ -34,9 +34,10 @@ $response =  UploadFile::fileUpload($your_file,'folder_name', $disk);
 
 ## Notes
 1. The file will be stored in your_folder inside determined storage driver.
-2. If you would use public disc, don't forget to create symolink with public folder.
-3. full_stored_path = storage driver (disk) + stored_path.
-4. if it is uploaded successfully, you can see the result as follows, any failure happens you will get a null response.
+2. your_folder maybe many sub folders, Ex: ahmad\sub_ahmad\images\png\
+3. If you would use public disk, don't forget to create symolink with public folder.
+4. full_stored_path = storage driver (disk) + stored_path.
+5. if it is uploaded successfully, you can see the result as follows, any failure happens you will get a null response.
 
 ```sh
 {

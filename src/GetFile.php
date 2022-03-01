@@ -2,6 +2,6 @@
 
 namespace AhmadAldali\FilesHelper;
 
-abstract class FilesHelper
+class GetFile extends FilesHelper
 {
-}
+}//class

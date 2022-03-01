@@ -21,7 +21,7 @@ composer require ahmadaldali/helper-files
 ## Usage
 
 - Upload File (Testing with local and public drivers) .\
-  You can upload your file, by passing it with the stored folder name, and the disc.\
+  You can upload your file, by passing it with the stored folder(s) name, and the disK.\
   The disk or the storage driver is optional and the default driver is "local".
 
 ```sh

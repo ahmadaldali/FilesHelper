@@ -4,7 +4,7 @@
 Files Helper is a package that allows you to deal with files easier.
 It will contain some methods like:
 - Upload a new file (image, video, txt, pdf, etc ..)  /  _COMPLETED_.
-- Upload a new file (image, video, txt, pdf, etc ..) with determining the driver storage /  _COMPLETED_..
+- Upload a new file (image, video, txt, pdf, etc ..) with determining the driver storage /  _COMPLETED_
 - Remove a file.
 
 
